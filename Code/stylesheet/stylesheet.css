@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope-bold.otf"); }
+body {
+  margin: 0;
+  padding: 50px 80px 0 80px;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center; }
+  body .nav {
+    display: flex;
+    align-self: flex-end;
+    font-size: 13px;
+    color: #0033FF; }
+    body .nav p {
+      margin-right: 50px;
+      cursor: pointer; }
+  body .content {
+    font-size: 70px;
+    padding: 80px; }
+    body .content p {
+      margin: 10px 0px 10px 0px; }
+    body .content .element {
+      position: relative; }
+      body .content .element:hover .wave {
+        bottom: 100px;
+        transform: rotate(-10deg); }
+    body .content .wave {
+      font-family: "Space Mono";
+      font-size: 12px;
+      position: absolute;
+      bottom: 50px;
+      left: 20px;
+      z-index: -1;
+      transition: all 0.3s ease; }
+    body .content .portrait:hover .portrait-container {
+      opacity: 1; }
+    body .content .portrait .portrait-container {
+      position: absolute;
+      width: 700px;
+      height: 400px;
+      background-image: url("../assets/images/portrait.jpg");
+      background-size: cover;
+      z-index: -1;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      transition: all 0.2s ease; }
+    body .content .title {
+      padding: 8px 10px 8px 10px; }
+      body .content .title:hover {
+        animation: Gradient 5s ease-in-out infinite; }
+    body .content .company {
+      position: relative; }
+      body .content .company .company-date {
+        position: absolute;
+        left: 250px;
+        z-index: -1;
+        transform: rotate(-12deg);
+        bottom: 14px;
+        transition: all 0.3s ease; }
+    body .content .heart {
+      position: relative; }
+      body .content .heart:hover .heart-icon {
+        animation: hearts 1s linear infinite; }
+      body .content .heart:hover .heart-icon:nth-child(2) {
+        animation: hearts 1s linear infinite 0.3s; }
+      body .content .heart:hover .heart-icon:nth-child(3) {
+        animation: hearts 1s linear infinite 0.6s; }
+      body .content .heart .heart-icon {
+        opacity: 0;
+        position: absolute;
+        left: 35%;
+        bottom: 0;
+        z-index: -1; }
+        body .content .heart .heart-icon img {
+          height: 35px; }
+      body .content .heart .heart-icon:nth-child(2) {
+        left: 40%;
+        bottom: -14px; }
+        body .content .heart .heart-icon:nth-child(2) img {
+          height: 20px; }
+      body .content .heart .heart-icon:nth-child(3) {
+        left: 44%;
+        bottom: -5px; }
+        body .content .heart .heart-icon:nth-child(3) img {
+          height: 30px; }
+    body .content .typography {
+      transition: all 0.3s linear; }
+      body .content .typography:hover {
+        animation: typeface 2s ease infinite 0.2s; }
+    body .content .email {
+      border-radius: 50%;
+      padding-left: 15px;
+      padding-right: 0px;
+      margin-right: 15px;
+      padding-bottom: 10px;
+      padding-top: 0px;
+      position: relative;
+      cursor: pointer; }
+      body .content .email:hover img {
+        opacity: 1;
+        animation: rotate 2s linear infinite; }
+      body .content .email img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0; }
+    body .content .dj {
+      position: relative; }
+      body .content .dj:hover {
+        color: transparent; }
+        body .content .dj:hover img {
+          opacity: 1; }
+      body .content .dj img {
+        position: absolute;
+        height: 188px;
+        bottom: 21px;
+        left: 5px;
+        opacity: 0; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(90deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(270deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes typeface {
+  0% {
+    font-family: "Felipa"; }
+  25% {
+    font-family: "Abril Fatface"; }
+  50% {
+    font-family: "Dancing Script"; }
+  75% {
+    font-family: "Permanent Marker"; }
+  100% {
+    font-family: "Felipa"; } }
+@keyframes hearts {
+  0% {
+    opacity: 0; }
+  25% {
+    bottom: 16.25px;
+    opacity: 0.5; }
+  50% {
+    bottom: 32.5px;
+    opacity: 1; }
+  75% {
+    bottom: 48.75px;
+    opacity: 0.5; }
+  100% {
+    bottom: 65px;
+    opacity: 0; } }
+@keyframes Gradient {
+  0% {
+    color: #33ccff; }
+  25% {
+    color: #ff99cc; }
+  50% {
+    color: #ff0066; }
+  75% {
+    color: #ffff00; }
+  100% {
+    color: #33ccff; } }
+
+/*# sourceMappingURL=stylesheet.css.map */
